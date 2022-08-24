@@ -1,0 +1,42 @@
+@font-face {
+  font-family: logoFont;
+  src: url(/fonts/gt-pressura-mono-light.woff2);
+}
+@font-face {
+  font-family: maisonNeueBook;
+  src: url(/fonts/MaisonNeue-Book.woff2);
+}
+@font-face {
+  font-family: maisonNeueLight;
+  src: url(/fonts/MaisonNeue-Light.woff2);
+}
+@font-face {
+  font-family: maisonNeueMedium;
+  src: url(/fonts/MaisonNeue-Medium.woff2);
+}
+@font-face {
+  font-family: perfectlyNineties;
+  src: url(/fonts/PerfectlyNineties-Regular.woff2);
+}
+
+body {
+  color: #2a2a2a;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header > h1 {
+  font-family: logoFont;
+  font-size: 5vh;
+  margin: 5vh;
+}
+
+header > nav {
+  font-family: maisonNeueBook;
+  font-size: 2vh;
+  margin: 5vh;
+}
