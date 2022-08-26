@@ -20,23 +20,54 @@
 }
 
 body {
+  font-family: maisonNeueLight;
   color: #2a2a2a;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
+a {
+  outline: none;
+  text-decoration: none;
+  color: #2a2a2a;
+}
+/* MAIN NAV */
+
+.site__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: space-between; */
   align-items: baseline;
 }
-
-header > h1 {
+.site__header > h1 {
   font-family: logoFont;
   font-size: 5vh;
   margin: 5vh;
 }
-
-header > nav {
+.site__header > nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
   font-family: maisonNeueBook;
   font-size: 2vh;
   margin: 5vh;
+}
+
+/* PRODUCT LIST */
+
+.container {
+  width: 90%;
+  max-width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.procuct-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
