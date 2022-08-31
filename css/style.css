@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: logoFont;
   src: url(/fonts/gt-pressura-mono-light.woff2);
 }
@@ -17,38 +17,31 @@
 @font-face {
   font-family: perfectlyNineties;
   src: url(/fonts/PerfectlyNineties-Regular.woff2);
+} */
+
+:root {
+  --off-color: red;
+}
+html {
+  scroll-behavior: smooth;
+}
+.mainNav h1 span {
+  display: inline-block;
+  transform: scaleX(-1);
+  color: var(--off-color);
+}
+.mainNav > * {
+  margin: 0;
+}
+@media screen and (min-width: 700px) {
+  .mainNav {
+    display: flex;
+    align-items: center;
+  }
 }
 
-body {
-  font-family: maisonNeueLight;
-  color: #2a2a2a;
-}
-
-a {
-  outline: none;
-  text-decoration: none;
-  color: #2a2a2a;
-}
-/* MAIN NAV */
-
-.site__header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* justify-content: space-between; */
-  align-items: baseline;
-}
-.site__header > h1 {
-  font-family: logoFont;
-  font-size: 5vh;
-  margin: 5vh;
-}
-.site__header > nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  font-family: maisonNeueBook;
-  font-size: 2vh;
-  margin: 5vh;
+.mainNav h1 {
+  margin-right: auto;
 }
 
 /*Category*/
@@ -98,22 +91,6 @@ a {
     column-count: 2;
   }
 }
-
-/* PRODUCT LIST */
-/* 
-.container {
-  width: 90%;
-  max-width: 1160px;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.procuct-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
 
 /*ProductList*/
 .productlist main {
@@ -235,7 +212,23 @@ dt {
   }
 }
 
-footer {
-  display: flex;
-  justify-content: center;
+/* CODE FROM TUESDAY CLASS */
+/* .preloader {
 }
+.circle {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  border: 5px solid hotpink;
+  /* border-top: make it invisible; */
+/* change the speed to linear */
+/* } */
+/* 
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
